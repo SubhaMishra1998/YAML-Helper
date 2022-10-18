@@ -1,0 +1,132 @@
+---
+#Sequence data types:
+
+student :
+ -name
+ -roll
+ marks
+
+
+#Upper thing can be done usig=ng below method
+studenta: [name,marks,roll_no]
+---
+
+# When the sequence is empty:
+
+empty_seq:
+ -hey
+ -how
+ -
+ -
+ -Null
+
+---
+
+
+#Nested Sequence in Yaml file
+
+
+-
+ -name
+ -roll
+-
+ -apple
+ -banana
+
+
+
+# key value pairs that are called as map Datatype is !!map
+name: Subha
+age:  25
+
+#nested map or nested key-value pair:
+name: Subha
+role:
+ -job_name: Devops
+  loc:Bangalore
+
+ -job_name: SDE
+  loc:Kolkata
+  
+
+#nested map also can be done using the below method
+name:Subha
+role:{age:25,job:devops}
+
+
+#pairs: here keys may have duplicate values
+
+-job: Teacher
+-job: Student
+
+#One important thing to remember that spacing and gaps are very important in
+#yaml file as :  -job: Teacher
+                # -job: Student    is not same as -job:Teacher
+                                                # -job: 
+                                                
+
+#set datetypes will keep only unique values:
+
+unique_names: !!set
+ ?subha
+ ?raja
+ ?subham
+
+
+
+#Dictionary Omap or !!omap
+
+dic_omap:
+ -subha:
+     name:Subha M
+  age:25
+     height:6.5
+ -Raja:
+  name:Raja S
+  age:24
+  height:7
+
+
+#Reusing Some properties using anchors concept in yaml
+
+likings: &base
+ fav_frout:apple
+ fav_sport:cricket
+
+person1:
+ name: Subha
+ <<: *base
+
+person2:
+ name: Raja
+ <<: *base
+ fav_sport: football
+ #Overrided the anchor which tell that fav_sport is cricket.
+
+#Organizing school and details of the property and manage larger data
+
+school:
+- name: DPS
+  principal: someone
+  students:
+  - r_no: 1
+    name: subha
+    marks: 99
+
+
+
+#Only a formet to store school data:
+School:
+ - name: DPS
+   principal: Someone
+   Students:
+    - sname: Subha
+      age: 44
+ - name: APS
+   principal: Anyone
+   Students:
+    - sname: Raja
+      age: 77
+ 
+
+  
