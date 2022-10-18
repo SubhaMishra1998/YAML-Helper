@@ -1,0 +1,32 @@
+"apple" : "I am a sweet fruit"
+1 : "My roll number"
+
+---
+
+
+# lists
+-apple
+-banana
+-orange
+
+---
+
+
+#blocks
+cities:
+ -kolkata
+ -delhi
+ -mumbai
+
+---
+
+
+cities :[delhi,mumbai]
+
+---
+
+{mango:"sweet fruit", age:56}
+
+
+
+...
