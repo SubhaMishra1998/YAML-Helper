@@ -4,11 +4,11 @@
 student :
  -name
  -roll
- marks
+ -marks
 
 
 #Upper thing can be done usig=ng below method
-studenta: [name,marks,roll_no]
+students: [name,marks,roll_no]
 ---
 
 # When the sequence is empty:
