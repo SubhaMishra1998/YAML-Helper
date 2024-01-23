@@ -1,42 +1,41 @@
 family:
-- grandfather1:
-  - name: Mahimchandra MIshra
-    age: 90
-    sons:
-    - son1:
-      - name: Banshi Mishra
-        age: 65
-        sons:
+  - grandfather:
+      name: John
+      age: 85
+      sons:
         - son1:
-          - name: Subha Mishra
-            age: 25
-            job: Devops Engineer
-            favourite_sports:
-            - cricket
-            - football
-        daughter:
-        - name: Sangita Mishra
-          age: 30
-          husband:
-          - name: Sibnath Dubey
-            age: 38
-            family:
-            - Father: Raghunath Dubey
-              age: 85
-            - Mother: Anupama
-              age: 70
-          daughther:
-          - name: Rai
-            age: 8
-          - name: Rani
-            age: 8 
-    - son2:
-      - name: Sushanta Mishra
-        age: 60
-        sons:
-        - name: Palash Mishra
-          age: 12
-          job: Student
+            name: Dan
+            age: 65
+            sons:
+              - son1:
+                  name: Luke
+                  age: 25
+                  job: DevOps Engineer
+                  favourite_sports:
+                    - cricket
+                    - football
+              - daughter:
+                  name: Lucy
+                  age: 28
+                  husband: Piter
+                  family:
+                    - Father: Richie
+                      age: 85
+                    - Mother: Ana
+                      age: 70
+                  daughters:
+                    - name: Ree
+                      age: 8
+                    - name: Rai
+                      age: 8
+        - son2:
+            name: Stanly
+            age: 60
+            sons:
+              - name: Pinar
+                age: 12
+                job: Student
+
 
 
 
