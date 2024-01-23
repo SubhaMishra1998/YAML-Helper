@@ -1,1 +1,53 @@
 
+# String
+name: Learning Yaml
+
+# Number (integer)
+age: 25
+
+# Number (float)
+height: 2.35
+
+# Boolean
+is_student: false
+
+# Null
+nullable_field: null
+
+# Sequence (Array/List)
+fruits:
+  - apple
+  - orange
+  - banana
+
+# Mapping (Object)
+person:
+  name: Mishra
+  age: 25
+
+
+# Multiline String
+multiline: |
+  This is a multiline
+  string in YAML.
+
+# Mapping as Key
+user:
+  name: Mishra
+  age: 25
+
+# Date
+birth_date: 1998-01-01
+
+# Time
+last_updated: 2024-01-23T12:34:56Z
+
+# Boolean (false)
+is_human: true
+
+# Sequence (Mixed types)
+mixed_types:
+  - 42
+  - "text"
+  - true
+  - null
