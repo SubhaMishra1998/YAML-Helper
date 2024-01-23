@@ -31,6 +31,13 @@ multiline: |
   This is a multiline
   string in YAML.
 
+#Write a single line in multipl elines
+
+message: >
+i am 
+suha 
+mishra.
+
 # Mapping as Key
 user:
   name: Mishra
